@@ -1,0 +1,31 @@
+def get_peer_node(username): # function name is get_peer_node
+    username is getting the username of whos using the chat
+
+    returns n
+    it is getting the username and returning it as a user
+
+
+def join_group(node, group): # function name is join_group
+    node is the user
+    group is the group chat the user is joining
+
+    it adds the user to the group they are trying to join and prints it
+
+def chat_task(ctx, pipe, n, group): # function name is chat_task
+    ctx might be a structure or a bunch of code happening behind the scenes
+    pipe might be a connection between my code (username, group, message) to the message system/module
+    n is the user?
+    group is the group chat the user is in
+
+    checks the message type and matches the correct format and string to print
+
+
+
+def get_channel(node, group): # function name is get_channel
+    node is the user
+    group is the group/text channel the user is trying to join
+
+    returns zhelper.zthread_fork(ctx, chat_task, n=node, group=group)
+
+    I think this makes or connects an actual text channel is the context code, gives the zthread_fork
+    the chat_task function that the user uses, and connects the user to the corresponding channel/group
